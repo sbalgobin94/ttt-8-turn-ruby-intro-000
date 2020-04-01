@@ -1,6 +1,5 @@
 def turn(array)
   puts "Please enter 1-9:"
-  input = gets.strip
   input_to_index(input)
   if valid_move?(array, index) == true
     move(array, index, "X")
@@ -19,6 +18,7 @@ puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 def input_to_index(input)
+  input = gets.strip
   index = input.to_i - 1
 end
 
