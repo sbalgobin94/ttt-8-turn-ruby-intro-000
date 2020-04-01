@@ -25,7 +25,7 @@ def position_taken?(board, index)
  end
 
 def move(array, index, value = "X")
-  board[index] == value
+  array[index] == value
 end
 
 def turn(board)
