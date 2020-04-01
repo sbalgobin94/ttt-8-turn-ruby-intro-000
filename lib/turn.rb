@@ -39,6 +39,6 @@ def position_taken?(board, index)
   end
  end
 
-def move(array, index, value = "X" || value = "O")
+def move(array, index, value = "X")
   array[index] == value
 end
