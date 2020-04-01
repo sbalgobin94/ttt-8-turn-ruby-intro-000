@@ -3,7 +3,7 @@ def turn(array)
   input = gets.strip
   input_to_index(input)
 
-  if valid_move?(array, index) == true
+  if valid_move?(board, index) == true
     move(array, index, "X")
   else
     turn(array)
