@@ -11,9 +11,6 @@ def turn(board)
     index = input.to_i - 1
 
 
-
-
-
 def display_board(board)
 puts " board[0] , board[1] , board[2] "
 puts "-----------"
@@ -39,6 +36,6 @@ def position_taken?(board, index)
   end
  end
 
-def move(array, index, value == "X")
+def move(array, index, value = "X")
   array[index] == value
 end
