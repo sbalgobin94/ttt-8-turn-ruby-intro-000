@@ -7,6 +7,7 @@ def turn(board)
     move(board, index, value = "X")
     display_board(board)
   else
+    puts "Not valid"
     turn(board)
   end
 end
