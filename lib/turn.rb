@@ -6,6 +6,7 @@ def turn()
   if valid_move?(array, index) == true
     move(array, index, "X")
     display_board(array)
+  end 
   else
     turn(array)
   end
