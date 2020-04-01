@@ -3,6 +3,13 @@ def turn(board)
   input = gets.strip
   index = input.to_i - 1
 
+  if valid_move?(board, index) == true
+    move(board, index, X)
+  else 
+    puts "Please enter 1-9:"
+    input = gets.strip
+    index = input.to_i - 1
+
 
 
 
@@ -16,10 +23,21 @@ puts " board[6] , board[7] , board[8] "
 end
 
 def valid_move?(board, index)
+  if position_taken?(board, index) == false && index.between?(0, 8)
+    return true
+  else
+    return false
+  end 
 end
 
 def position_taken?(board, index)
-end
+  if board[index] == "" || board[index] == " " || board[index] == nil
+    return false
+  end
+  if board[index] == "X" || board[index] == "O"
+    return true
+  end 
+ end
 
 def move(array, index, value == "X")
   array[index] == value
