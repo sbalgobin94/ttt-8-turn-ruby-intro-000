@@ -8,7 +8,6 @@ def turn(board)
   else
     turn(board)
   end
-
   display_board(board)
 end
 
@@ -41,6 +40,6 @@ def position_taken?(board, index)
   end
  end
 
-def move(array, index, value)
+def move(array, index, value = "X" || value = "O")
   array[index] == value
 end
