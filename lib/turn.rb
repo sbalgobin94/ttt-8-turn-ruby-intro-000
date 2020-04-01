@@ -4,7 +4,7 @@ def turn(board)
   index = input_to_index(input)
 
   if valid_move?(board, index) == true
-    move(board, index, value = "X")
+    move(board, index, "X")
     display_board(board)
   else
     turn(board)
@@ -40,6 +40,6 @@ def position_taken?(board, index)
   end
  end
 
-def move(array, index, value = "X")
+def move(array, index, value)
   array[index] == value
 end
