@@ -9,7 +9,7 @@ end
 
 def input_to_index(input)
 index = input.to_i + 1
-end 
+end
 
 def valid_move?(board, index)
   if position_taken?(board, index) == false && index.between?(0, 8)
@@ -30,4 +30,8 @@ def position_taken?(board, index)
 
 def move(array, index, value = "X")
   array[index] == value
+end
+
+def turn(board)
+  puts "Please enter 1-9:"
 end
