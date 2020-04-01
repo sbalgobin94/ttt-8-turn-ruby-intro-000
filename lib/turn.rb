@@ -8,7 +8,7 @@ puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 def input_to_index(input)
-index = input.to_i + 1
+index = input.to_i - 1
 end
 
 def valid_move?(board, index)
@@ -41,5 +41,5 @@ def turn(board)
     move(board, index, "X")
   else
     turn(board)
-  end 
+  end
 end
