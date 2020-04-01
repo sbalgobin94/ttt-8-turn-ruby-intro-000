@@ -5,7 +5,7 @@ def turn(board)
 
   if valid_move?(board, index) == true
     move(board, index, X)
-  else 
+  else
     puts "Please enter 1-9:"
     input = gets.strip
     index = input.to_i - 1
@@ -27,7 +27,7 @@ def valid_move?(board, index)
     return true
   else
     return false
-  end 
+  end
 end
 
 def position_taken?(board, index)
@@ -36,7 +36,7 @@ def position_taken?(board, index)
   end
   if board[index] == "X" || board[index] == "O"
     return true
-  end 
+  end
  end
 
 def move(array, index, value == "X")
