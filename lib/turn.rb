@@ -4,7 +4,7 @@ def turn(array)
   index = input.to_i - 1
   if valid_move?(array, index) == true
     move(array, index, "X")
-    display_board(board)
+    display_board(array)
   else
     turn(array)
   end
