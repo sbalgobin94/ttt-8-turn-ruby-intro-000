@@ -3,12 +3,12 @@ def turn(board)
   input = gets.strip
   input_to_index(input)
 
-  if valid_move?(array, index) == true
-    move(array, index, "X")
+  if valid_move?(board, index) == true
+    move(board, index, "X")
   else
-    turn(array)
+    turn(board)
   end
-  display_board(array)
+  display_board(board)
 
 end
 
