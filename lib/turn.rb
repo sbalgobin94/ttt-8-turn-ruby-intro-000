@@ -1,4 +1,4 @@
-def turn(board)
+def turn(array)
   puts "Please enter 1-9:"
   input = gets.strip
   index = input.to_i - 1
@@ -6,10 +6,9 @@ def turn(board)
     move(board, index, "X")
     display_board(board)
   else
-    turn(board)
+    turn(array)
   end
 end
-
 
 def display_board(board)
 puts " #{board[0]} | #{board[1]} | #{board[2]} "
