@@ -1,5 +1,4 @@
 
-
 def display_board(board)
 puts " #{board[0]} | #{board[1]} | #{board[2]} "
 puts "-----------"
@@ -29,8 +28,8 @@ def position_taken?(board, index)
   end
  end
 
-def move(array, index, value)
-  array[index] == value
+def move(board, index, value = "X")
+  board[index] == value
 end
 
 def turn(board)
