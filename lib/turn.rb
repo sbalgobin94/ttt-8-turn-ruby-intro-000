@@ -5,10 +5,10 @@ def turn()
 
   if valid_move?(array, index) == true
     move(array, index, "X")
-    display_board(array)
   else
     turn(array)
   end
+  display_board(array)
 
 end
 
